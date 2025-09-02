@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nivesh Family</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        .email-container {
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 25px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px 25px;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            background-color: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .signboard-details {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        .signboard-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .spec-item {
+            background: white;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .spec-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .spec-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .payment-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 10px;
+        }
+        
+        .gst-info {
+            background: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        
+        .benefit-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-left: 3px solid #667eea;
+        }
+        
+        .benefit-item h4 {
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .benefit-item p {
+            color: #666;
+            font-size: 13px;
+        }
+        
+        .support-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .support-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        
+        .support-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 15px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .support-item strong {
+            min-width: 100px;
+            margin-right: 10px;
+        }
+        
+        .contact-link {
+            color: #87ceeb;
+            text-decoration: none;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 25px;
+            text-align: center;
+        }
+        
+        .footer-message {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .signature {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 10px;
+                border-radius: 8px;
+            }
+            
+            .benefits-grid,
+            .signboard-specs {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎉 Welcome to the Nivesh Family!</h1>
+            <p>Your journey to financial success begins here</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <div class="greeting">
+                <strong>Dear Branch Head,</strong><br>
+                I am <span class="highlight">Naresh Kumar</span>, Branch Coordinator at Nivesh. It is a matter of great joy that your branch has been successfully onboarded with us. We look forward to your cooperation in taking Nivesh to greater heights.
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #e8f4f8 0%, #f0e8f8 100%); padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: center; border: 1px solid #d1ecf1;">
+                <h3 style="color: #2c3e50; margin-bottom: 8px; font-size: 18px;">📋 Important Setup Details</h3>
+                <p style="color: #666; font-size: 14px; margin: 0;">Please review the following key points to get started with your branch</p>
+            </div>
+            
+            <!-- Section 1: Agreement & Bank Details -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-icon">1</div>
+                    Agreement & Bank Details
+                </div>
+                <p>Once the agreement is finalized, please share your branch bank details with valid proofs to complete your profile in our system.</p>
+            </div>
+            
+            <!-- Section 2: Branch Signboard -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-icon">2</div>
+                    Branch Signboard
+                </div>
+                
+                <div class="signboard-details">
+                    <div class="signboard-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Size</div>
+                            <div class="spec-value">10 x 2 ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Budget</div>
+                            <div class="spec-value">₹6,500</div>
+                            <div style="font-size: 12px; color: #666;">(incl. GST)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <strong>Payment Structure:</strong><br>
+                        • 50% advance (to vendor)<br>
+                        • 50% after installation (with branch photo)
+                    </div>
+                    
+                    <div class="gst-info">
+                        <strong>Company GST Details:</strong><br>
+                        Providential Platforms Pvt. Ltd.<br>
+                        GST No: <strong>09AAICP7195G1ZV</strong>
+                    </div>
+                </div>
+                
+                <p><em>📋 A standard signboard design will be shared to maintain uniform branding.</em></p>
+            </div>
+            
+            <!-- Section 3: Postpaid SIM -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-icon">3</div>
+                    Postpaid SIM
+                </div>
+                <p>A company-provided SIM will be issued for <strong>business use only</strong>. This number will also be displayed on your signboard for customer contact.</p>
+            </div>
+            
+            <!-- Section 4: Growth Benefits -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-icon">4</div>
+                    Growth Benefits
+                </div>
+                <p style="margin-bottom: 15px;">As a Branch Head, you will have access to:</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>📈 Wide Product Basket</h4>
+                        <p>Mutual Funds, Bonds, Insurance, FDs, PMS, AIFs, Digital Gold & more</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🎓 Learn & Grow Sessions</h4>
+                        <p>Monthly sessions on partner and client acquisition, SIP book building, and AUM growth</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🛠️ Digital Tools</h4>
+                        <p>Ready-to-use digital tools & content to engage partners</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>📊 Business Growth</h4>
+                        <p>Comprehensive support to scale your financial services business</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Support Section -->
+        <div class="support-section">
+            <div class="support-title">🤝 We're Here to Support You</div>
+            <div class="support-grid">
+                <div class="support-item">
+                    <strong>📧 Email:</strong>
+                    <a href="mailto:branchsupport@nivesh.com" class="contact-link">branchsupport@nivesh.com</a>
+                </div>
+                <div class="support-item">
+                    <strong>📞 Helpline:</strong>
+                    <a href="tel:+917290029205" class="contact-link">+91 7290029205</a>
+                </div>
+                <div class="support-item">
+                    <strong>💬 WhatsApp:</strong>
+                    <span>Send "Hi" to <a href="https://wa.me/917290008070" class="contact-link">7290008070</a></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-message">
+                We are excited to see your branch grow and are committed to supporting you every step of the way! 🚀
+            </div>
+            <div class="signature">
+                <strong>Best Regards,</strong><br>
+                Branch Coordinator – Nivesh
+            </div>
+        </div>
+    </div>
+</body>
+</html>
