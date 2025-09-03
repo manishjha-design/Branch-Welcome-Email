@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nivesh</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+        }
+        .header {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 3px solid #ef5350;
+        }
+        .header h1 {
+            margin: 0;
+            color: #c62828;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .content {
+            padding: 30px 25px;
+        }
+        .welcome-text {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #424242;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #d32f2f;
+        }
+        .section {
+            margin-bottom: 30px;
+            background-color: #fafafa;
+            padding: 20px;
+            border-left: 4px solid #ef5350;
+            border-radius: 4px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #c62828;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .details-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 15px;
+        }
+        .details-list li:last-child {
+            border-bottom: none;
+        }
+        .credentials-box {
+            background-color: #fff3e0;
+            border: 2px solid #ffab91;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .example-text {
+            background-color: #f3e5f5;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .app-links {
+            display: flex;
+            gap: 15px;
+            margin: 15px 0;
+            justify-content: center;
+        }
+        .app-link {
+            background-color: #ef5350;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .app-link:hover {
+            background-color: #d32f2f;
+        }
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .support-item {
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .community-box {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border: 2px solid #ef5350;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .community-link {
+            background-color: #ef5350;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, #ef5350, #e91e63);
+            margin: 25px 0;
+        }
+        @media (max-width: 600px) {
+            .app-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Welcome to Nivesh!</h1>
+        </div>
+        
+        <div class="content">
+            <div class="welcome-text">
+                <strong>Dear &lt;Branch Head Name&gt;,</strong><br><br>
+                Welcome to Nivesh! We are delighted to appoint you as <span class="highlight">Nivesh Branch Head</span> for &lt;Branch Name&gt; with effect from &lt;Date of Joining DD MMM YYY e.g. 02 Sep 2025&gt;. Your <span class="highlight">Branch Code</span> is &lt;Branch Code&gt;.
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Branch Details</h2>
+                <ul class="details-list">
+                    <li><span class="highlight">Branch Name:</span> &lt;Branch Name&gt;</li>
+                    <li><span class="highlight">Branch Address:</span> &lt;Branch Address&gt;</li>
+                    <li><span class="highlight">Branch Official Email ID:</span> &lt;Branch Official Email ID&gt;</li>
+                    <li><span class="highlight">Branch Official Mobile Number:</span> &lt;Branch Official Mobile Number&gt;</li>
+                    <li><span class="highlight">Branch Head Personal Email ID:</span> &lt;Branch Head Personal Email ID&gt;</li>
+                    <li><span class="highlight">Branch Head Personal Phone Number:</span> &lt;Branch Head Personal Phone Number&gt; </li>
+                    <br />
+					<li><span class="highlight">Note:</span> Branch Official Mobile Number & Email is to be used on all promotional materials with respect to the branch.</li>
+				</ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Login Credentials</h2>
+                <p>You can access your branch dashboard using the following login details:</p>
+                <div class="credentials-box">
+                    <ul class="details-list">
+                        <li><span class="highlight">User ID:</span> &lt;Branch Email ID&gt;</li>
+                        <li><span class="highlight">Password:</span> Your password will be the first 4 letters of your PAN (in uppercase) followed by your Date of Birth in DDMMMYY format.</li>
+                    </ul>
+                    <div class="example-text">
+                        <span class="highlight">Example:</span> PAN <strong>ABCDXXXX</strong>, DOB <strong>14-Oct-1990</strong> → Password <strong>ABCD14OCT1990</strong>
+                    </div>
+                </div>
+                
+                <p>To get started, please download the Nivesh App from the links below and login with your credentials:</p>
+                <div class="app-links">
+                    <a href="#" class="app-link">📱 Android - Google Play Store</a>
+                    <a href="#" class="app-link">🍎 Apple - App Store</a>
+                </div>
+                
+                <p style="text-align: center; margin-top: 20px;">
+                    For your convenience, we've also created some training resources to help you explore the platform:<br>
+                    👉 <a href="#" style="color: #d32f2f; font-weight: 600;">Nivesh App Tutorials</a>
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h2 class="section-title">Support</h2>
+                <p>At Nivesh, we are committed to providing you with the best support:</p>
+                <p>We have assigned dedicated Relationship Managers to support your branch operations:</p>
+                
+                <div class="support-grid">
+                    <div class="support-item">
+                        <strong>Central RM Name:</strong> &lt;To be updated&gt;<br>
+                        <em>Primary contact for operational support</em>
+                    </div>
+                    <div class="support-item">
+                        <strong>Sales RM Name:</strong> <Ankit Nihania><br>
+                        <em>Business planning & growth support – <7290050356></em>
+                    </div>
+                </div>
+
+                <ul class="details-list" style="margin-top: 20px;">
+                    <li><span class="highlight">Email:</span> branchsupport@nivesh.com</li>
+                    <li><span class="highlight">Helpline:</span> &lt;Naresh's Mobile Number&gt; </li>
+                    <li><span class="highlight">WhatsApp Support:</span> Send <em>Hi</em> to 7290008070</li>
+                    <li>You can also raise a ticket from the <span class="highlight">Queries section</span> on the portal.</li>
+                </ul>
+            </div>
+
+            <div class="community-box">
+                <h2 class="section-title" style="color: #c62828;">Community & Growth Tools</h2>
+                <p>Join the <strong>Nivesh Partner Community</strong> for regular updates and resources:</p>
+                <a href="#" class="community-link">👉 Join WhatsApp Community</a>
+                <p style="margin-top: 15px; margin-bottom: 0;">
+                    We also provide access to a range of digital tools and content to support your business growth. The applicable commission structure and all resources will be available directly on your dashboard.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px; font-size: 16px; color: #424242;">
+                We are excited to have you onboard and look forward to a successful partnership.
+            </div>
+        </div>
+
+        <div class="footer">
+            Best Regards,<br>
+            <strong>Team Nivesh</strong>
+        </div>
+    </div>
+</body>
+</html>
